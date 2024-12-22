@@ -1,21 +1,36 @@
-console.log("hello Coder Army");
+// Basic JavaScript Code Demonstrating Variables and Console Logging
 
-// control + ` it will open your terminal
+// Printing a message to the console
+console.log("hello Coder Army"); // Output: hello Coder Army
 
-// let const var
-// var old tarike, don't use it.
+// Shortcut to open the terminal in most editors: Control + `
 
-let num = 10.5;
-console.log(num);
+// Different ways to declare variables: let, const, var
 
-let ar = "Rohit";
-ar = "mohit";
-console.log(ar)
+// 1. let: Block-scoped variable, allows reassignment
+let num = 10.5; // Initializing a variable with a number
+console.log(num); // Output: 10.5
 
-const ids = 20;
-console.log(ids);
-// ids = 30; values can't be changed
+let ar = "Rohit"; // Initializing a variable with a string
+ar = "mohit"; // Reassigning the variable
+console.log(ar); // Output: mohit
 
-var x = 10;
-x=20;
-console.log(x);
+// 2. const: Block-scoped constant, values cannot be reassigned
+const ids = 20; // Initializing a constant
+console.log(ids); // Output: 20
+// ids = 30; // This will throw an error: "TypeError: Assignment to constant variable."
+
+// 3. var: Function-scoped (or globally scoped if not inside a function)
+// It's an older way to declare variables and should generally be avoided in modern code.
+var x = 10; // Initializing a variable with var
+x = 20; // Reassigning the variable
+console.log(x); // Output: 20
+
+/*
+NOTES:
+1. Use `let` for variables that can change over time.
+2. Use `const` for values that should not change.
+3. Avoid using `var` unless absolutely necessary (e.g., for compatibility with older code).
+4. JavaScript is dynamically typed, so you don't need to specify data types when declaring variables.
+5. Prefer modern practices (`let` and `const`) for cleaner and more predictable code.
+*/

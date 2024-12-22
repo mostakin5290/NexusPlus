@@ -174,7 +174,7 @@ const add = (a, b) => a + b; // Arrow function syntax
 let sum = add(2, 3);
 
 
-// ********** Conditional Statements ***************
+// ************* Conditional Statements ***************
 // Conditional statements control the flow of code execution.
 // if-else
 let num1 = 10;
