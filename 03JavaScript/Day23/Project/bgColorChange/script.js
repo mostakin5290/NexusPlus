@@ -17,8 +17,8 @@
 // })
 
 const root = document.querySelector(".root");
-
-root.addEventListener('mousemove',()=>{
+// mousemove
+root.addEventListener('click',()=>{
     if(event.target.tagName==='BUTTON')
     document.body.style.background = event.target.id;
 })
