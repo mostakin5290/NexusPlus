@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Weather App</h1>
+            </header>
+
+            <div class="weather-card">
+                <form class="city-input">
+                    <input type="text" id="city-name-input"
+                        placeholder="Enter City" />
+                    <button type="submit" id="submit-city">Submit</button>
+                </form>
+
+                <h2 class="city-name">Los Angeles</h2>
+                <p class="weather-description">Clear Sky</p>
+                <div class="weather-icon">
+                    <img src="#"
+                        alt="weather-icon">
+                </div>
+
+                <div class="temperature-time">
+                    <p class="temperature">25°C</p>
+                    <p class="time">12:45 PM</p>
+                </div>
+
+                <div class="details">
+                    <p><strong>Humidity:</strong> <span class="humidity"></span></p>
+                    <p><strong>Wind:</strong> <span class="wind"></span></p>
+                </div>
+            </div>
+
+            <footer>
+                <p>Made with ❤️ by You</p>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
