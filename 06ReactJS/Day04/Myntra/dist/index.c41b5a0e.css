@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  background: #02693b;
+  padding: 10px;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+}
+
+.card-footer {
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.container {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+/*# sourceMappingURL=index.c41b5a0e.css.map */
