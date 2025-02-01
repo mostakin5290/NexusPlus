@@ -1,0 +1,153 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(SDGlitch_Demo.c8025f24.ttf)
+}
+
+.container {
+    border: var(--border);
+    background: #0a0a00f2;
+    width: 60%;
+    max-width: 1200px;
+    padding: 2rem;
+    box-shadow: 0 0 40px #ffee004d
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    text-shadow: 0 0 15px var(--yellow);
+    margin: 0 0 2rem
+}
+
+h1 {
+    background: linear-gradient(45deg, var(--yellow), #fa0);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: myFirstFont;
+    font-size: 2.5rem
+}
+
+.password-display {
+    border: var(--border);
+    text-shadow: 0 0 10px var(--yellow);
+    margin-bottom: 2rem;
+    display: flex;
+    box-shadow: inset 0 0 15px #fe03
+}
+
+.input {
+    width: 90%;
+    color: var(--yellow);
+    background: 0 0;
+    outline: none;
+    padding: 1rem;
+    font-size: 1.2rem
+}
+
+.regenerate-btn {
+    width: 60px;
+    color: var(--blue);
+    background: 0 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 1.5rem;
+    display: flex
+}
+
+.btn {
+    background: 0 0;
+    background-color: var(--yellow);
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden
+}
+
+.copy-btn {
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    flex-direction: row;
+    gap: 25px;
+    font-size: 16px;
+    transition: all .3s ease-in-out;
+    display: flex
+}
+
+.controls {
+    margin: 1rem 0
+}
+
+.length-control {
+    margin-bottom: 2rem
+}
+
+.silder {
+    appearance: none;
+    background: var(--blue);
+    width: 100%;
+    height: 4px;
+    margin-top: 1rem
+}
+
+.silder::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: var(--yellow);
+    cursor: pointer;
+    border-radius: 2px;
+    width: 20px;
+    height: 20px
+}
+
+.options-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    display: grid
+}
+
+.checkbox {
+    border: 1px solid #ffee004d;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    display: flex
+}
+
+.checkbox input {
+    appearance: none;
+    border: 2px solid var(--yellow);
+    width: 20px;
+    height: 20px;
+    position: relative
+}
+
+.checkbox input:checked:before {
+    content: "✓";
+    color: var(--yellow);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+@media screen and (width<=720px) {
+    .container {
+        width: 80%
+    }
+}
+
+@media screen and (width<=480px) {
+    .container {
+        width: 90%
+    }
+}
+
+@media screen and (width<=320px) {
+    .container {
+        width: 100%
+    }
+}
+
+/*# sourceMappingURL=index.25a752a4.css.map */

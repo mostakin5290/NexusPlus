@@ -1,0 +1,154 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../../font/SDGlitch_Demo.ttf);
+}
+
+.container {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem; */
+    width: 60%;
+    max-width: 1200px;
+    padding: 2rem;
+    background: rgba(10, 10, 0, 0.95);
+    border: var(--border);
+    box-shadow: 0 0 40px rgba(255, 238, 0, 0.3);
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    text-shadow: 0 0 15px var(--yellow);
+    margin: 0 0 2rem 0;
+}
+
+h1 {
+    font-family: myFirstFont;
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, var(--yellow), #FFAA00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.password-display {
+    display: flex;
+    border: var(--border);
+    margin-bottom: 2rem;
+    box-shadow: inset 0 0 15px rgba(255, 238, 0, 0.2);
+    text-shadow: 0 0 10px var(--yellow);
+}
+
+.input {
+    width: 90%;
+    background: transparent;
+    padding: 1rem;
+    color: var(--yellow);
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.regenerate-btn {
+    width: 60px;
+    padding: 0;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: var(--blue);
+}
+
+.btn {
+    padding: 1rem 2rem;
+    background: transparent;
+    font-weight: 700;
+    background-color: var(--yellow);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.copy-btn {
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    font-size: 16px;
+    transition: all .3s ease-in-out;
+}
+
+
+.controls {
+    margin: 1rem 0;
+}
+
+.length-control {
+    margin-bottom: 2rem;
+}
+
+.silder {
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: var(--blue);
+    margin-top: 1rem;
+}
+
+.silder::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    background: var(--yellow);
+    cursor: pointer;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid rgba(255, 238, 0, 0.3);
+}
+
+.checkbox input {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid var(--yellow);
+    position: relative;
+}
+
+.checkbox input:checked::before {
+    content: "✓";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--yellow);
+}
+
+@media screen and (max-width: 720px) {
+    .container{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .container{
+        width: 100%;
+    }
+}
